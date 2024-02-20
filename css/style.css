@@ -1,0 +1,265 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu{
+    height: 100vh;
+    width: 35vw;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 6rem;
+}
+
+.show{
+    left: 0;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        display: grid;
+        grid-template-areas: 
+        'nv hd'
+        'sc sc'
+        'ft ft';
+        height: 280vh;
+        width: 100vw; 
+        margin: 0;
+        grid-template-columns: 15fr 85fr;
+        grid-template-rows: 10fr 230fr 40fr;
+    }
+
+    .menu-button{
+        grid-area: nv;
+        background-color: aqua;
+    }
+
+    header{
+        grid-area: hd;
+        background-color: blue;
+    }
+
+    section{
+        grid-area: sc;
+        background-color: brown;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #bil1{
+        background-color: #fbc1b3;
+        height: 60vh;
+        width: 90vw;
+        border-radius: 10px;
+    
+    }
+    
+    #bild1{
+        background-image: url(../);
+        background-size: cover;
+        height: 50vh;
+        width: 90vw;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .text{
+        background-color: white;
+        height: 10vh;
+        width: 90vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+        font-family: Kalnia;
+    }
+    
+    h2{
+        color: black;
+    }
+    
+    
+    #bil2{
+        background-color: #fbc1b3;
+        height: 60vh;
+        width: 90vw;
+        border-radius: 10px;
+    }
+    
+    #bild2{
+        background-image: url(../);
+        background-size: cover;
+        height: 50vh;
+        width: 90vw;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    #bil3{
+        background-color: #fbc1b3;
+        height: 60vh;
+        width: 90vw;
+        border-radius: 10px;
+    }
+    
+    #bild3{
+        background-image: url(../img/porshe-911.jpg);
+        background-size: cover;
+        height: 50vh;
+        width: 90vw;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    footer{
+        grid-area: ft;
+        background-color: green;
+    }
+    .nav2{
+        display: none;
+    }
+}
+
+@media all and (min-width: 769px){
+    .wrapper{
+        display: grid;
+        grid-template-areas: 
+        'hd'
+        'nv'
+        'sc'
+        'ft';
+        height: 130vh;
+        width: 100vw;
+        margin: 0;
+        grid-template-rows: 20fr 5fr 75fr 30fr;
+    }
+    
+    .nav2{
+        grid-area: nv;
+        background-color: aqua;
+    }
+
+    header{
+        grid-area: hd;
+        background-color: blue;
+    }
+
+    section{
+        grid-area: sc;
+        background-color: brown;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #bil1{
+        background-color: #fbc1b3;
+        height: 55vh;
+        width: 26.67vw;
+        border-radius: 10px;
+    
+    }
+    
+    #bild1{
+        background-image: url(../);
+        background-size: cover;
+        height: 47vh;
+        width: 26.67vw;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .text{
+        background-color: white;
+        height: 8vh;
+        width: 26.67vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+        font-family: Kalnia;
+    }
+    
+    h2{
+        color: black;
+    }
+    
+    
+    #bil2{
+        background-color: #fbc1b3;
+        height: 55vh;
+        width: 26.67vw;
+        border-radius: 10px;
+    }
+    
+    #bild2{
+        background-image: url(../);
+        background-size: cover;
+        height: 47vh;
+        width: 26.67vw;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    #bil3{
+        background-color: #fbc1b3;
+        height: 55vh;
+        width: 26.67vw;
+        border-radius: 10px;
+    }
+    
+    #bild3{
+        background-image: url(../img/porshe-911.jpg);
+        background-size: cover;
+        height: 47vh;
+        width: 26.67vw;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    footer{
+        grid-area: ft;
+        background-color: green;
+    }
+
+    .menu-button{
+        display: none;
+    }
+
+}
