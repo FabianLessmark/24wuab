@@ -60,17 +60,17 @@ body{
 
     .menu-button{
         grid-area: nv;
-        background-color: aqua;
+        background-color: white;
     }
 
     header{
         grid-area: hd;
-        background-color: blue;
+        background-color: white;
     }
 
     section{
         grid-area: sc;
-        background-color: brown;
+        background-color: rgb(158, 156, 156);
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
@@ -78,7 +78,7 @@ body{
     }
 
     #bil1{
-        background-color: #fbc1b3;
+        background-color: white;
         height: 60vh;
         width: 90vw;
         border-radius: 10px;
@@ -86,8 +86,9 @@ body{
     }
     
     #bild1{
-        background-image: url(../);
+        background-image: url(../img/xc60-black.jpg);
         background-size: cover;
+        background-position: center;
         height: 50vh;
         width: 90vw;
         border-radius: 10px 10px 0px 0px;
@@ -115,22 +116,23 @@ body{
     
     
     #bil2{
-        background-color: #fbc1b3;
+        background-color: white;
         height: 60vh;
         width: 90vw;
         border-radius: 10px;
     }
     
     #bild2{
-        background-image: url(../);
+        background-image: url(../img/audi-a4.jpg);
         background-size: cover;
+        background-position: center;
         height: 50vh;
         width: 90vw;
         border-radius: 10px 10px 0px 0px;
     }
     
     #bil3{
-        background-color: #fbc1b3;
+        background-color: white;
         height: 60vh;
         width: 90vw;
         border-radius: 10px;
@@ -139,6 +141,7 @@ body{
     #bild3{
         background-image: url(../img/porshe-911.jpg);
         background-size: cover;
+        background-position: center;
         height: 50vh;
         width: 90vw;
         border-radius: 10px 10px 0px 0px;
@@ -146,10 +149,18 @@ body{
 
     footer{
         grid-area: ft;
-        background-color: green;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
     .nav2{
         display: none;
+    }
+
+    img{
+        height: 100px;
+        margin-left: 30px;
     }
 }
 
@@ -169,17 +180,22 @@ body{
     
     .nav2{
         grid-area: nv;
-        background-color: aqua;
+        background-color: rgb(123, 121, 121);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
     header{
         grid-area: hd;
-        background-color: blue;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     section{
         grid-area: sc;
-        background-color: brown;
+        background-color: rgb(158, 156, 156);
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
@@ -187,7 +203,7 @@ body{
     }
 
     #bil1{
-        background-color: #fbc1b3;
+        background-color: white;
         height: 55vh;
         width: 26.67vw;
         border-radius: 10px;
@@ -195,8 +211,9 @@ body{
     }
     
     #bild1{
-        background-image: url(../);
+        background-image: url(../img/xc60-black.jpg);
         background-size: cover;
+        background-position: center;
         height: 47vh;
         width: 26.67vw;
         border-radius: 10px 10px 0px 0px;
@@ -224,22 +241,23 @@ body{
     
     
     #bil2{
-        background-color: #fbc1b3;
+        background-color: white;
         height: 55vh;
         width: 26.67vw;
         border-radius: 10px;
     }
     
     #bild2{
-        background-image: url(../);
+        background-image: url(../img/audi-a4.jpg);
         background-size: cover;
+        background-position: center;
         height: 47vh;
         width: 26.67vw;
         border-radius: 10px 10px 0px 0px;
     }
     
     #bil3{
-        background-color: #fbc1b3;
+        background-color: white;
         height: 55vh;
         width: 26.67vw;
         border-radius: 10px;
@@ -248,6 +266,7 @@ body{
     #bild3{
         background-image: url(../img/porshe-911.jpg);
         background-size: cover;
+        background-position: center;
         height: 47vh;
         width: 26.67vw;
         border-radius: 10px 10px 0px 0px;
@@ -255,11 +274,22 @@ body{
 
     footer{
         grid-area: ft;
-        background-color: green;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .menu-button{
         display: none;
     }
 
+    img{
+        height: 150px;
+    }
+
+}
+
+.a-footer{
+    color: white;
 }
