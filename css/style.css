@@ -58,6 +58,47 @@ body{
         grid-template-rows: 10fr 230fr 40fr;
     }
 
+    .wrapper2{
+        display: grid;
+        grid-template-areas: 
+        'nv hd'
+        'bb bb'
+        'sc1 sc1'
+        'sc2 sc2'
+        'sc3 sc3'
+        'ft ft';
+        height: 150vh;
+        width: 100vw; 
+        margin: 0;
+        grid-template-columns: 15fr 85fr;
+        grid-template-rows: 10fr 45fr 10fr 20fr 25fr 40fr;
+    }
+
+    .bil-bild{
+        grid-area: bb;
+        background-color: rgb(158, 156, 156);
+        display: flex;
+        justify-content: space-around;
+    }
+    #xc60-bild{
+        height: 220px;
+    }
+    .rubrik-bil{
+        grid-area: sc1;
+        background-color: white;
+    }
+    .info-bil{
+        grid-area: sc2;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+    }
+    .beskrivning-bil{
+        grid-area: sc3;
+        background-color: white;
+        margin: 10px;
+    }
+
     .menu-button{
         grid-area: nv;
         background-color: white;
@@ -158,7 +199,7 @@ body{
         display: none;
     }
 
-    img{
+    .logga{
         height: 100px;
         margin-left: 30px;
     }
@@ -176,6 +217,52 @@ body{
         width: 100vw;
         margin: 0;
         grid-template-rows: 20fr 5fr 75fr 30fr;
+    }
+
+    .wrapper2{
+        display: grid;
+        grid-template-areas: 
+        'hd'
+        'nv'
+        'bb'
+        'sc1'
+        'sc2'
+        'sc3'
+        'ft';
+        height: 195vh;
+        width: 100vw;
+        margin: 0;
+        grid-template-rows: 20fr 5fr 60fr 15fr 25fr 40fr 30fr;
+    }
+
+    .bil-bild{
+        grid-area: bb;
+        background-color: rgb(158, 156, 156);
+       display: flex;
+       justify-content: space-around;
+    }
+    .rubrik-bil{
+        grid-area: sc1;
+        background-color: white;
+    }
+    h1{
+        
+    }
+    .info-bil{
+        grid-area: sc2;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .beskrivning-bil{
+        grid-area: sc3;
+        background-color: white;
+        margin: 20px;
+    }
+
+    #xc60-bild{
+        width: 650px;
+
     }
     
     .nav2{
@@ -284,7 +371,7 @@ body{
         display: none;
     }
 
-    img{
+    .logga{
         height: 150px;
     }
 
