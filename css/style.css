@@ -6,7 +6,7 @@ body{
 
 .menu{
     height: 100vh;
-    width: 35vw;
+    width: 45vw;
     background: white;
     position: fixed;
     top: 0;
@@ -67,11 +67,65 @@ body{
         'sc2 sc2'
         'sc3 sc3'
         'ft ft';
-        height: 150vh;
+        height: 210vh;
         width: 100vw; 
         margin: 0;
         grid-template-columns: 15fr 85fr;
         grid-template-rows: 10fr 45fr 10fr 20fr 25fr 40fr;
+    }
+
+    .wrapper3{
+        display: grid;
+        grid-template-areas: 
+        'nv hd'
+        'db1 db1'
+        'scf scf'
+        'db2 db2'
+        'scl scl'
+        'ft ft';
+        height: 240vh;
+        width: 100vw; 
+        margin: 0;
+        grid-template-columns: 15fr 85fr;
+        grid-template-rows: 10fr 50fr 30fr 50fr 30fr 40fr;
+    }
+    #foretaget-bild{
+        grid-area: db1;
+        margin: 0px;
+        display: flex;
+        justify-content: space-around
+    }
+    #karta{
+        height: 230px;
+
+    }
+    #om-foretaget{
+        grid-area: scf;
+        background-color: white;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    #text-info{
+
+    }
+    #lokal-info{
+        grid-area: scl;
+        background-color: white;
+        margin: 15px;
+    }
+    #lokal-bild{
+        grid-area: db2;
+        display: flex;
+        justify-content: center;
+    }
+    #bilhandlare{
+        height: 236px;
+        margin: 0;
+    }
+
+    .wrapper4{
+        
     }
 
     .bil-bild{
@@ -155,7 +209,6 @@ body{
         color: black;
     }
     
-    
     #bil2{
         background-color: white;
         height: 60vh;
@@ -201,7 +254,7 @@ body{
 
     .logga{
         height: 100px;
-        margin-left: 30px;
+        margin-left: 0;
     }
 }
 
@@ -273,11 +326,11 @@ body{
         'db1 scf'
         'scl db2'
         'ft ft';
-        height: 175vh;
+        height: 182vh;
         width: 100vw;
         margin: 0;
         grid-template-columns: 50fr 50fr;
-        grid-template-rows: 20fr 5fr 60fr 60fr 30fr;
+        grid-template-rows: 20fr 7fr 60fr 60fr 35fr;
     }
 
     #foretaget-bild{
@@ -293,15 +346,31 @@ body{
     }
     #om-foretaget{
         grid-area: scf;
-        background-color: aqua;
+        background-color: white;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    #text-info{
+        margin-top: -80px;
     }
     #lokal-info{
         grid-area: scl;
-        background-color: chartreuse;
+        background-color: white;
+        margin: 15px;
     }
     #lokal-bild{
         grid-area: db2;
-        background-color: green;
+        display: flex;
+        justify-content: center;
+    }
+    #bilhandlare{
+        height: 384px;
+        margin: 0;
+    }
+
+    .wrapper4{
+
     }
 
     .nav2{
