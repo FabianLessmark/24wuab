@@ -265,6 +265,45 @@ body{
 
     }
     
+    .wrapper3{
+        display: grid;
+        grid-template-areas: 
+        'hd hd'
+        'nv nv'
+        'db1 scf'
+        'scl db2'
+        'ft ft';
+        height: 175vh;
+        width: 100vw;
+        margin: 0;
+        grid-template-columns: 50fr 50fr;
+        grid-template-rows: 20fr 5fr 60fr 60fr 30fr;
+    }
+
+    #foretaget-bild{
+        grid-area: db1;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    #karta{
+        height: 375px;
+        margin: 0px;
+
+    }
+    #om-foretaget{
+        grid-area: scf;
+        background-color: aqua;
+    }
+    #lokal-info{
+        grid-area: scl;
+        background-color: chartreuse;
+    }
+    #lokal-bild{
+        grid-area: db2;
+        background-color: green;
+    }
+
     .nav2{
         grid-area: nv;
         background-color: rgb(123, 121, 121);
