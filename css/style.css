@@ -1,10 +1,12 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=swap');
+
+body {
     margin: 0;
     padding: 0;
 
 }
 
-.menu{
+.menu {
     height: 100vh;
     width: 45vw;
     background: white;
@@ -12,158 +14,169 @@ body{
     top: 0;
     left: -90vw;
     transition: left 0.3s;
-    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
     z-index: 10;
 }
 
-.menu-button{
+.menu-button {
     cursor: pointer;
     display: inline;
 }
 
-.menu-button i.material-icons{
+.menu-button i.material-icons {
     font-size: 6rem;
 }
 
-.show{
+.show {
     left: 0;
 }
 
-.fade-layer{
+.fade-layer {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 5;
 }
 
-.fade-layer.visible{
+.fade-layer.visible {
     display: block;
 }
 
-@media screen and (max-width: 768px){
-    .wrapper{
+@media screen and (max-width: 768px) {
+    .wrapper {
         display: grid;
-        grid-template-areas: 
-        'nv hd'
-        'sc sc'
-        'ft ft';
+        grid-template-areas:
+            'nv hd'
+            'sc sc'
+            'ft ft';
         height: 280vh;
-        width: 100vw; 
+        width: 100vw;
         margin: 0;
         grid-template-columns: 15fr 85fr;
         grid-template-rows: 10fr 230fr 40fr;
     }
 
-    .wrapper2{
+    .wrapper2 {
         display: grid;
-        grid-template-areas: 
-        'nv hd'
-        'bb bb'
-        'sc1 sc1'
-        'sc2 sc2'
-        'sc3 sc3'
-        'ft ft';
+        grid-template-areas:
+            'nv hd'
+            'bb bb'
+            'sc1 sc1'
+            'sc2 sc2'
+            'sc3 sc3'
+            'ft ft';
         height: 210vh;
-        width: 100vw; 
+        width: 100vw;
         margin: 0;
         grid-template-columns: 15fr 85fr;
         grid-template-rows: 10fr 45fr 10fr 20fr 25fr 40fr;
     }
 
-    .wrapper3{
+    .wrapper3 {
         display: grid;
-        grid-template-areas: 
-        'nv hd'
-        'db1 db1'
-        'scf scf'
-        'db2 db2'
-        'scl scl'
-        'ft ft';
+        grid-template-areas:
+            'nv hd'
+            'db1 db1'
+            'scf scf'
+            'db2 db2'
+            'scl scl'
+            'ft ft';
         height: 240vh;
-        width: 100vw; 
+        width: 100vw;
         margin: 0;
         grid-template-columns: 15fr 85fr;
         grid-template-rows: 10fr 50fr 30fr 50fr 30fr 40fr;
     }
-    #foretaget-bild{
+
+    #foretaget-bild {
         grid-area: db1;
         margin: 0px;
         display: flex;
         justify-content: space-around
     }
-    #karta{
+
+    #karta {
         height: 230px;
 
     }
-    #om-foretaget{
+
+    #om-foretaget {
         grid-area: scf;
         background-color: white;
         margin: 15px;
         display: flex;
         flex-direction: column;
     }
-    #text-info{
 
-    }
-    #lokal-info{
+    #text-info {}
+
+    #lokal-info {
         grid-area: scl;
         background-color: white;
         margin: 15px;
     }
-    #lokal-bild{
+
+    #lokal-bild {
         grid-area: db2;
         display: flex;
         justify-content: center;
     }
-    #bilhandlare{
+
+    #bilhandlare {
         height: 236px;
         margin: 0;
     }
 
-    .wrapper4{
-        
-    }
+    .wrapper4 {}
 
-    .bil-bild{
+    .bil-bild {
         grid-area: bb;
         background-color: rgb(158, 156, 156);
         display: flex;
         justify-content: space-around;
     }
-    #xc60-bild{
+
+    #xc60-bild {
         height: 220px;
     }
-    .rubrik-bil{
+
+    .rubrik-bil {
         grid-area: sc1;
         background-color: white;
     }
-    .info-bil{
+
+    #rubrik-bil-text{
+        font-size: x-large;
+    }
+
+    .info-bil {
         grid-area: sc2;
         background-color: white;
         display: flex;
         flex-direction: row;
     }
-    .beskrivning-bil{
+
+    .beskrivning-bil {
         grid-area: sc3;
         background-color: white;
         margin: 10px;
     }
 
-    .menu-button{
+    .menu-button {
         grid-area: nv;
         background-color: white;
     }
 
-    header{
+    header {
         grid-area: hd;
         background-color: white;
     }
 
-    section{
+    section {
         grid-area: sc;
         background-color: rgb(158, 156, 156);
         display: flex;
@@ -172,15 +185,15 @@ body{
         align-items: center;
     }
 
-    #bil1{
+    #bil1 {
         background-color: white;
         height: 60vh;
         width: 90vw;
         border-radius: 10px;
-    
+
     }
-    
-    #bild1{
+
+    #bild1 {
         background-image: url(../img/xc60-black.jpg);
         background-size: cover;
         background-position: center;
@@ -188,8 +201,8 @@ body{
         width: 90vw;
         border-radius: 10px 10px 0px 0px;
     }
-    
-    .text{
+
+    .text {
         background-color: white;
         height: 10vh;
         width: 90vw;
@@ -198,25 +211,19 @@ body{
         justify-content: center;
         border-radius: 0px 0px 10px 10px;
     }
-    
-    a{
-        text-decoration: none;
-        color: black;
-        font-family: Kalnia;
-    }
-    
-    h2{
+
+    h2 {
         color: black;
     }
-    
-    #bil2{
+
+    #bil2 {
         background-color: white;
         height: 60vh;
         width: 90vw;
         border-radius: 10px;
     }
-    
-    #bild2{
+
+    #bild2 {
         background-image: url(../img/audi-a4.jpg);
         background-size: cover;
         background-position: center;
@@ -224,15 +231,15 @@ body{
         width: 90vw;
         border-radius: 10px 10px 0px 0px;
     }
-    
-    #bil3{
+
+    #bil3 {
         background-color: white;
         height: 60vh;
         width: 90vw;
         border-radius: 10px;
     }
-    
-    #bild3{
+
+    #bild3 {
         background-image: url(../img/porshe-911.jpg);
         background-size: cover;
         background-position: center;
@@ -241,91 +248,94 @@ body{
         border-radius: 10px 10px 0px 0px;
     }
 
-    footer{
+    footer {
         grid-area: ft;
         background-color: rgb(0, 0, 0);
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
-    .nav2{
+
+    .nav2 {
         display: none;
     }
 
-    .logga{
+    .logga {
         height: 100px;
         margin-left: 0;
     }
 }
 
-@media all and (min-width: 769px){
-    .wrapper{
+@media all and (min-width: 769px) {
+    .wrapper {
         display: grid;
-        grid-template-areas: 
-        'hd'
-        'nv'
-        'sc'
-        'ft';
+        grid-template-areas:
+            'hd'
+            'nv'
+            'sc'
+            'ft';
         height: 130vh;
         width: 100vw;
         margin: 0;
         grid-template-rows: 20fr 5fr 75fr 30fr;
     }
 
-    .wrapper2{
+    .wrapper2 {
         display: grid;
-        grid-template-areas: 
-        'hd'
-        'nv'
-        'bb'
-        'sc1'
-        'sc2'
-        'sc3'
-        'ft';
+        grid-template-areas:
+            'hd'
+            'nv'
+            'bb'
+            'sc1'
+            'sc2'
+            'sc3'
+            'ft';
         height: 195vh;
         width: 100vw;
         margin: 0;
         grid-template-rows: 20fr 5fr 60fr 15fr 25fr 40fr 30fr;
     }
 
-    .bil-bild{
+    .bil-bild {
         grid-area: bb;
         background-color: rgb(158, 156, 156);
-       display: flex;
-       justify-content: space-around;
+        display: flex;
+        justify-content: space-around;
     }
-    .rubrik-bil{
+
+    .rubrik-bil {
         grid-area: sc1;
         background-color: white;
     }
-    h1{
-        
-    }
-    .info-bil{
+
+    h1 {}
+
+    .info-bil {
         grid-area: sc2;
         background-color: white;
         display: flex;
         justify-content: space-evenly;
     }
-    .beskrivning-bil{
+
+    .beskrivning-bil {
         grid-area: sc3;
         background-color: white;
         margin: 20px;
     }
 
-    #xc60-bild{
+    #xc60-bild {
         width: 650px;
 
     }
-    
-    .wrapper3{
+
+    .wrapper3 {
         display: grid;
-        grid-template-areas: 
-        'hd hd'
-        'nv nv'
-        'db1 scf'
-        'scl db2'
-        'ft ft';
+        grid-template-areas:
+            'hd hd'
+            'nv nv'
+            'db1 scf'
+            'scl db2'
+            'ft ft';
         height: 182vh;
         width: 100vw;
         margin: 0;
@@ -333,47 +343,51 @@ body{
         grid-template-rows: 20fr 7fr 60fr 60fr 35fr;
     }
 
-    #foretaget-bild{
+    #foretaget-bild {
         grid-area: db1;
         margin: 0px;
         display: flex;
         justify-content: center;
     }
-    #karta{
+
+    #karta {
         height: 375px;
         margin: 0px;
 
     }
-    #om-foretaget{
+
+    #om-foretaget {
         grid-area: scf;
         background-color: white;
         margin: 15px;
         display: flex;
         flex-direction: column;
     }
-    #text-info{
+
+    #text-info {
         margin-top: -80px;
     }
-    #lokal-info{
+
+    #lokal-info {
         grid-area: scl;
         background-color: white;
         margin: 15px;
     }
-    #lokal-bild{
+
+    #lokal-bild {
         grid-area: db2;
         display: flex;
         justify-content: center;
     }
-    #bilhandlare{
+
+    #bilhandlare {
         height: 384px;
         margin: 0;
     }
 
-    .wrapper4{
+    .wrapper4 {}
 
-    }
-
-    .nav2{
+    .nav2 {
         grid-area: nv;
         background-color: rgb(123, 121, 121);
         display: flex;
@@ -381,14 +395,14 @@ body{
         justify-content: space-evenly;
     }
 
-    header{
+    header {
         grid-area: hd;
         background-color: white;
         display: flex;
         justify-content: space-evenly;
     }
 
-    section{
+    section {
         grid-area: sc;
         background-color: rgb(158, 156, 156);
         display: flex;
@@ -397,15 +411,15 @@ body{
         align-items: center;
     }
 
-    #bil1{
+    #bil1 {
         background-color: white;
         height: 55vh;
         width: 26.67vw;
         border-radius: 10px;
-    
+
     }
-    
-    #bild1{
+
+    #bild1 {
         background-image: url(../img/xc60-black.jpg);
         background-size: cover;
         background-position: center;
@@ -413,8 +427,8 @@ body{
         width: 26.67vw;
         border-radius: 10px 10px 0px 0px;
     }
-    
-    .text{
+
+    .text {
         background-color: white;
         height: 8vh;
         width: 26.67vw;
@@ -423,26 +437,22 @@ body{
         justify-content: center;
         border-radius: 0px 0px 10px 10px;
     }
-    
-    a{
-        text-decoration: none;
-        color: black;
-        font-family: Kalnia;
-    }
-    
-    h2{
+
+
+
+    h2 {
         color: black;
     }
-    
-    
-    #bil2{
+
+
+    #bil2 {
         background-color: white;
         height: 55vh;
         width: 26.67vw;
         border-radius: 10px;
     }
-    
-    #bild2{
+
+    #bild2 {
         background-image: url(../img/audi-a4.jpg);
         background-size: cover;
         background-position: center;
@@ -450,15 +460,15 @@ body{
         width: 26.67vw;
         border-radius: 10px 10px 0px 0px;
     }
-    
-    #bil3{
+
+    #bil3 {
         background-color: white;
         height: 55vh;
         width: 26.67vw;
         border-radius: 10px;
     }
-    
-    #bild3{
+
+    #bild3 {
         background-image: url(../img/porshe-911.jpg);
         background-size: cover;
         background-position: center;
@@ -467,7 +477,7 @@ body{
         border-radius: 10px 10px 0px 0px;
     }
 
-    footer{
+    footer {
         grid-area: ft;
         background-color: rgb(0, 0, 0);
         display: flex;
@@ -475,16 +485,46 @@ body{
         align-items: center;
     }
 
-    .menu-button{
+    .menu-button {
         display: none;
     }
 
-    .logga{
+    .logga {
         height: 150px;
     }
 
 }
 
-.a-footer{
+.a-footer {
     color: white;
+}
+
+a {
+    font-family: 'Iceland';
+    text-decoration: none;
+    color: black;
+}
+
+.nav-klick {
+    font-size: x-large;
+}
+
+.text-bild{
+    margin-left: 10px;
+    margin-top: -8px;
+}
+
+p{
+    font-family: 'Iceland';
+    font-size: large;
+}
+
+h1{
+    font-family: 'Iceland';
+    font-size: xx-large;
+}
+
+li{
+    font-family: 'Iceland';
+    font-size: larger;
 }
