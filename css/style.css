@@ -86,7 +86,7 @@ body {
             'db2 db2'
             'scl scl'
             'ft ft';
-        height: 240vh;
+        height: 210vh;
         width: 100vw;
         margin: 0;
         grid-template-columns: 15fr 85fr;
@@ -216,7 +216,7 @@ body {
         height: 60vh;
         width: 90vw;
         border-radius: 10px;
-
+        box-shadow: 3px 3px 3px 3px #333333;
     }
 
     #bild1 {
@@ -247,6 +247,7 @@ body {
         height: 60vh;
         width: 90vw;
         border-radius: 10px;
+        box-shadow: 3px 3px 3px 3px #333333;
     }
 
     #bild2 {
@@ -263,6 +264,7 @@ body {
         height: 60vh;
         width: 90vw;
         border-radius: 10px;
+        box-shadow: 3px 3px 3px 3px #333333;
     }
 
     #bild3 {
