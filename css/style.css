@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&family=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 body {
     margin: 0;
@@ -131,8 +132,33 @@ body {
         margin: 0;
     }
 
-    .wrapper4 {}
+    .wrapper4 {
+        display: grid;
+        grid-template-areas:
+            'nv hd'
+            'fr fr'
+            'ft ft';
+        height: 140vh;
+        width: 100vw;
+        margin: 0;
+        grid-template-columns: 15fr 85fr;
+        grid-template-rows: 10fr  90fr 40fr;
+    }
 
+    #contactForm{
+        grid-area: fr;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .form-group{
+        display: flex;
+        justify-content: center;
+    }
+    #response{
+        display: flex;
+        justify-content: space-evenly;
+    }
     .bil-bild {
         grid-area: bb;
         background-color: rgb(158, 156, 156);
@@ -353,7 +379,6 @@ body {
     #karta {
         height: 375px;
         margin: 0px;
-
     }
 
     #om-foretaget {
@@ -385,7 +410,33 @@ body {
         margin: 0;
     }
 
-    .wrapper4 {}
+    .wrapper4 {
+        display: grid;
+        grid-template-areas:
+            'hd'
+            'nv'
+            'fr'
+            'ft';
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        grid-template-rows: 20fr 5fr 50fr 25fr;
+    }
+
+    #contactForm{
+        grid-area: fr;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .form-group{
+        display: flex;
+        justify-content: center;
+    }
+    #response{
+        display: flex;
+        justify-content: space-evenly;
+    }
 
     .nav2 {
         grid-area: nv;
@@ -416,7 +467,7 @@ body {
         height: 55vh;
         width: 26.67vw;
         border-radius: 10px;
-
+        box-shadow: 3px 3px 3px 3px #333333;
     }
 
     #bild1 {
@@ -450,6 +501,7 @@ body {
         height: 55vh;
         width: 26.67vw;
         border-radius: 10px;
+        box-shadow: 3px 3px 3px 3px #333333;
     }
 
     #bild2 {
@@ -466,6 +518,7 @@ body {
         height: 55vh;
         width: 26.67vw;
         border-radius: 10px;
+        box-shadow: 3px 3px 3px 3px #333333;
     }
 
     #bild3 {
@@ -527,4 +580,18 @@ h1{
 li{
     font-family: 'Iceland';
     font-size: larger;
+}
+
+label{
+    font-family: 'Iceland';
+    font-size: larger;
+}
+
+button{
+    font-family: 'Iceland';
+    font-size: larger;
+}
+
+.long-text{
+    font-family: 'Kodchasan';
 }
