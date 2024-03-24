@@ -211,7 +211,7 @@ body {
         align-items: center;
     }
 
-    #bil1 {
+    .bil {
         background-color: white;
         height: 60vh;
         width: 90vw;
@@ -242,14 +242,6 @@ body {
         color: black;
     }
 
-    #bil2 {
-        background-color: white;
-        height: 60vh;
-        width: 90vw;
-        border-radius: 10px;
-        box-shadow: 3px 3px 3px 3px #333333;
-    }
-
     #bild2 {
         background-image: url(../img/audi-a4.jpg);
         background-size: cover;
@@ -257,14 +249,6 @@ body {
         height: 50vh;
         width: 90vw;
         border-radius: 10px 10px 0px 0px;
-    }
-
-    #bil3 {
-        background-color: white;
-        height: 60vh;
-        width: 90vw;
-        border-radius: 10px;
-        box-shadow: 3px 3px 3px 3px #333333;
     }
 
     #bild3 {
@@ -464,12 +448,18 @@ body {
         align-items: center;
     }
 
-    #bil1 {
+    .bil{
         background-color: white;
         height: 55vh;
         width: 26.67vw;
         border-radius: 10px;
         box-shadow: 3px 3px 3px 3px #333333;
+    }
+
+    .bil:hover{
+        box-shadow: 5px 5px 5px 5px #333333;
+        scale: 1.02;
+        transition: 0.5s;
     }
 
     #bild1 {
@@ -491,19 +481,8 @@ body {
         border-radius: 0px 0px 10px 10px;
     }
 
-
-
     h2 {
         color: black;
-    }
-
-
-    #bil2 {
-        background-color: white;
-        height: 55vh;
-        width: 26.67vw;
-        border-radius: 10px;
-        box-shadow: 3px 3px 3px 3px #333333;
     }
 
     #bild2 {
@@ -513,14 +492,6 @@ body {
         height: 47vh;
         width: 26.67vw;
         border-radius: 10px 10px 0px 0px;
-    }
-
-    #bil3 {
-        background-color: white;
-        height: 55vh;
-        width: 26.67vw;
-        border-radius: 10px;
-        box-shadow: 3px 3px 3px 3px #333333;
     }
 
     #bild3 {
@@ -558,6 +529,10 @@ a {
     font-family: 'Iceland';
     text-decoration: none;
     color: black;
+}
+a:hover{
+    scale: 1.05;
+    transition: 0.5s;
 }
 
 .nav-klick {
