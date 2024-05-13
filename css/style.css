@@ -70,11 +70,11 @@ body {
             'sc2 sc2'
             'sc3 sc3'
             'ft ft';
-        height: 210vh;
+        height: 195vh;
         width: 100vw;
         margin: 0;
         grid-template-columns: 15fr 85fr;
-        grid-template-rows: 10fr 45fr 10fr 20fr 25fr 40fr;
+        grid-template-rows: 10fr 45fr 5fr 10fr 25fr 40fr;
     }
 
     .wrapper3 {
@@ -86,11 +86,11 @@ body {
             'db2 db2'
             'scl scl'
             'ft ft';
-        height: 210vh;
+        height: 170vh;
         width: 100vw;
         margin: 0;
         grid-template-columns: 15fr 85fr;
-        grid-template-rows: 10fr 50fr 30fr 50fr 30fr 40fr;
+        grid-template-rows: 10fr 30fr 30fr 30fr 30fr 40fr;
     }
 
     #foretaget-bild {
@@ -101,7 +101,7 @@ body {
     }
 
     #karta {
-        height: 230px;
+        height: 295px;
 
     }
 
@@ -128,21 +128,7 @@ body {
     }
 
     #bilhandlare {
-        height: 236px;
-        margin: 0;
-    }
-
-    .wrapper4 {
-        display: grid;
-        grid-template-areas:
-            'nv hd'
-            'fr fr'
-            'ft ft';
-        height: 140vh;
-        width: 100vw;
-        margin: 0;
-        grid-template-columns: 15fr 85fr;
-        grid-template-rows: 10fr 90fr 40fr;
+        height: 300px;
     }
 
     .form-group {
@@ -157,13 +143,15 @@ body {
 
     .bil-bild {
         grid-area: bb;
-        background-color: rgb(158, 156, 156);
-        display: flex;
-        justify-content: space-around;
+        background-color: white;
+
     }
 
     #xc60-bild {
-        height: 220px;
+        height: 280px;
+    }
+    #xc60-bild2{
+        height: 280px;
     }
 
     .rubrik-bil {
@@ -270,49 +258,63 @@ body {
 
     .logga {
         height: 100px;
-        margin-left: 0;
+        margin-left: 30px;
     }
 
-    .container {
-        grid-area: fr;
-        width: 95vw;
-        height: 80vh;
-        margin-left: 20px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
+    .wrapper4 {
+        display: grid;
+        grid-template-areas:
+            'nv hd'
+            'fr fr'
+            'ft ft';
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        grid-template-columns: 15fr 85fr;
+        grid-template-rows: 10fr 60fr 30fr;
     }
 
     label {
         display: block;
-        margin-bottom: 5px;
+        margin-top: 30px;
     }
 
-    input[type="text"];
-    input[type="email"];
+    input[type="text"],
+    input[type="email"],
 
-    textarea {
-        width: 80%;
-        padding: 8px;
-        margin-bottom: 10px;
-        border: 1px solid white;
-        border-radius: 4px;
-        box-sizing: border-box;
+    .container {
+        grid-area: fr;
+        width: 80vw;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
     }
 
     button {
         display: block;
+        margin-top: 30px;
         width: 100%;
-        padding: 10px;
+        padding: 20px;
         background-color: rgb(123, 121, 121);
         color: white;
         border: none;
         border-radius: 4px;
         cursor: pointer;
     }
+
+    textarea {
+        width: 80%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 2px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
 }
 
 @media all and (min-width: 769px) {
@@ -347,14 +349,14 @@ body {
 
     .bil-bild {
         grid-area: bb;
-        background-color: rgb(158, 156, 156);
-        display: flex;
-        justify-content: space-around;
+        background-color: white;
     }
 
     .rubrik-bil {
         grid-area: sc1;
         background-color: white;
+        display: flex;
+        flex-direction: column;
     }
 
     h1 {}
@@ -370,11 +372,17 @@ body {
         grid-area: sc3;
         background-color: white;
         margin: 20px;
+        display: flex;
+        flex-direction: column;
     }
 
     #xc60-bild {
-        width: 650px;
+        width: 638px;
 
+    }
+
+    #xc60-bild2{
+        width: 638px;
     }
 
     .wrapper3 {
@@ -653,6 +661,28 @@ button {
     font-family: 'Kodchasan';
 }
 
+.rubrik-long-text{
+    font-family: 'Kodchasan';
+}
+
 button:hover {
     background-color: rgb(86, 85, 85);
+}
+
+.footer-h2{
+    color: white;
+
+}
+
+#pris-nytt{
+    font-family: 'Iceland';
+    margin-top: -10px;
+    color: red;
+}
+
+#pris-gammalt{
+    text-decoration: line-through;
+    font-family: 'Iceland';
+    margin-top: -20px;
+    color: grey;
 }
